@@ -1,0 +1,115 @@
+#!/bin/bash
+
+if [ -e $PRODPATH/scripts/SecondRun ]; then
+    rm $PRODPATH/scripts/SecondRun
+fi
+
+cp $PRODPATH/logs/crabSub.log $PRODPATH/tmp/crablogtmp
+##last log file
+lastLog=`ls -tr $PRODPATH/logs/weekLogs/log* | tail -1`
+
+
+
+while read line
+do
+  echo $line
+    Type=`echo $line | awk '{print $1}'`
+    ds=`echo $line | awk '{print $2}'`
+    DS=${ds#*/}
+    Status=`echo $line | awk '{print $3}'`
+
+    if [ "$Status" == "done" ]; then
+cat >> $lastLog <<EOF
+Info : dataset $DS completely processed
+EOF
+
+
+	continue
+    elif [ "$Status" == "X" ]; then
+#	crab -submit all -c crabTasks/$Type/$DS
+	source $PRODPATH/scripts/initSub.sh $Type/$DS
+	sed -i 's/'$DS'\tX/'$DS'\t1/g' $PRODPATH/logs/crabSub.log
+  	crab -status -c crabTasks/$Type/$DS > $PRODPATH/tmp/log
+	source $PRODPATH/scripts/JobType.sh
+
+    elif [ "$Status" == "10" ]; then #too much resubmissions
+	  	    #warning message is launched
+	echo "Warning : task $DS was processed 10 times"
+	echo "and is still not finished..."
+	echo "You may check manually what happens"
+	echo "(Start a new task on missing jobs using"
+	echo " the taskResub command)"
+
+	cat >> $lastLog <<EOF
+Warning : task $DS was processed 5 times
+and is still not finished...
+You may check manually what happens
+==> command taskResub  ready
+EOF
+
+	N=$Status
+
+	source $PRODPATH/scripts/prepareSecRun.sh $Type/$DS
+
+    else
+       
+	crab -status -c crabTasks/$Type/$DS > $PRODPATH/tmp/log
+	source $PRODPATH/scripts/JobType.sh
+	source $PRODPATH/tmp/FailFile
+	source $PRODPATH/tmp/ResubFile
+
+	if [ $Status -gt 3 ]; then
+	    source $PRODPATH/tmp/StuckFileStep1
+	    source $PRODPATH/tmp/StuckFileStep2
+	fi
+	
+	N=`echo $Status + 1 | bc`
+#	echo $Status"   "$N 
+
+	tmpO=$DS"\t"$Status
+	tmpI=$DS"\t"$N
+#	echo $DS"   " $tmpO"   "$tmpI
+	sed -i 's/'$tmpO'/'$tmpI'/g' $PRODPATH/logs/crabSub.log
+	Status=$N
+
+    fi
+    echo $line"   "$N"   "$Status
+    tmp=`cat $PRODPATH/logs/summary | grep $DS`
+    Ntot=`echo $tmp | awk '{print $2}'`
+    Ndone=`echo $tmp | awk '{print $3}'`
+    if [[ $Ntot -eq $Ndone ]]; then
+	echo "glibou"$Ntot"   "$Ndone
+	sed -i 's/'$DS'\t'$Status'/'$DS'\tdone/g' $PRODPATH/logs/crabSub.log
+    fi
+    echo $line"   "$N"   "$Status
+
+done < $PRODPATH/tmp/crablogtmp
+
+rm $PRODPATH/tmp/crablogtmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

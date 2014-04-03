@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+echo "Initialize the certificate"
+voms-proxy-init -voms cms ##  -pwstdin < $PRODPATH/config/.pwdFile
+
+echo "Initialize crab files"
+python $PRODPATH/python/readCfg.py
+
+echo "Check repositories on CASTOR"
+source $PRODPATH/scripts/storagePrep.sh
+
+echo "Check existence of crab tasks "
+source $PRODPATH/scripts/crabCreate.sh
+
+echo "Check status of crab tasks "
+source $PRODPATH/scripts/crabSubmit.sh
+
+#for aligned printing
+cp $PRODPATH/logs/summary $PRODPATH/tmp/tmpSummary
+cat $PRODPATH/tmp/tmpSummary | column -t > $PRODPATH/logs/summary
+
+echo "=============== Summary ==============="
+cat $PRODPATH/logs/summary
+echo ""
+
+python python/sendReport.py

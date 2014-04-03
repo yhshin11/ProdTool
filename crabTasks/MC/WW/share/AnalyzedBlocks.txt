@@ -1,0 +1,3 @@
+/WW_TuneZ2star_8TeV_pythia6_tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#650fdcce-fa61-11e1-b87d-003048f02c8a
+/WW_TuneZ2star_8TeV_pythia6_tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#565dfc36-fad6-11e1-b87d-003048f02c8a
+/WW_TuneZ2star_8TeV_pythia6_tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#e60fee1a-fb4a-11e1-b87d-003048f02c8a

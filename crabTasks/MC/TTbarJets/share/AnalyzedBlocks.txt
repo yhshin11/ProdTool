@@ -1,0 +1,4 @@
+/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#65df0124-e22a-11e1-b87d-003048f02c8a
+/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#d8f9c092-e2c8-11e1-b87d-003048f02c8a
+/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#5b97f676-e13f-11e1-b87d-003048f02c8a
+/TTJets_MassiveBinDECAY_TuneZ2star_8TeV-madgraph-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#45bf7632-e1b5-11e1-b87d-003048f02c8a

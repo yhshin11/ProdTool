@@ -1,0 +1,3 @@
+/Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#03f6af6c-dde7-11e1-a954-003048f02c8a
+/Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#e35da194-dceb-11e1-812d-003048f02c8a
+/Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM#6d046492-deda-11e1-b87d-003048f02c8a

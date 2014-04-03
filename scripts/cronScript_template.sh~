@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /afs/cern.ch/user/m/mmarionn/workspace/private/cmssw/
+source mm.sh dev524
+cd ProdTool
+
+source setup.sh
+prod
+
+python python/sendReport.py
+

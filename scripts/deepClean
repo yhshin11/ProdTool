@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+clean
+rm $PRODPATH/scripts/cronScript.sh
+rm $PRODPATH/crontab.txt
+rm $PRODPATH/logs/weekLogs/*

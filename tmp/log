@@ -1,0 +1,392 @@
+crab:  Version 2.10.4_patch4 running on Tue Apr  1 03:22:20 2014 EST (07:22:20 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabTasks/MC/ZZ/
+
+crab:  error detecting glite version 
+crab:  error detecting glite version 
+crab:  Checking the status of all jobs: please wait
+crab:  
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Done              Terminated    0          0           cream3.hep.kbfi.ee
+2     Y   Done              Terminated    0          0           creamce03.ciemat.es
+3     Y   Done              Terminated    0          0           creamce03.ciemat.es
+4     Y   Done              Terminated    0          0           cream4.hep.kbfi.ee
+5     Y   Done              Terminated    0          0           creamce02.ciemat.es
+6     Y   Done              Terminated    0          0           cream4.hep.kbfi.ee
+7     Y   Done              Terminated    0          0           creamce03.ciemat.es
+8     Y   Done              Terminated    0          0           creamce03.ciemat.es
+9     Y   Done              Terminated    0          0           creamce03.ciemat.es
+10    Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+11    Y   Done              Terminated    0          0           creamce02.ciemat.es
+12    Y   Done              Terminated    0          0           creamce03.ciemat.es
+13    Y   Done              Terminated    0          0           creamce02.ciemat.es
+14    Y   Done              Terminated    0          0           creamce02.ciemat.es
+15    Y   Done              Terminated    0          0           creamce03.ciemat.es
+16    Y   Done              Terminated    0          0           creamce03.ciemat.es
+17    Y   Done              Terminated    0          0           creamce02.ciemat.es
+18    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+19    Y   Done              Terminated    0          0           creamce02.ciemat.es
+20    Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+21    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+22    Y   Done              Terminated    0          0           creamce02.ciemat.es
+23    Y   Done              Terminated    0          0           creamce02.ciemat.es
+24    Y   Done              Terminated    0          0           creamce02.ciemat.es
+25    Y   Done              Terminated    0          0           creamce02.ciemat.es
+26    Y   Done              Terminated    0          0           creamce02.ciemat.es
+27    Y   Done              Terminated    0          0           creamce02.ciemat.es
+28    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+29    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+30    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+31    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+32    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+33    Y   Done              Terminated    0          0           creamce03.ciemat.es
+34    Y   Done              Terminated    0          0           creamce02.ciemat.es
+35    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+36    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+37    Y   Done              Terminated    0          0           creamce02.ciemat.es
+38    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+39    Y   Done              Terminated    0          0           creamce03.ciemat.es
+40    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+41    Y   Done              Terminated    0          0           creamce03.ciemat.es
+42    Y   Done              Terminated    0          0           creamce02.ciemat.es
+43    Y   Done              Terminated    0          0           creamce03.ciemat.es
+44    Y   Done              Terminated    0          0           creamce03.ciemat.es
+45    Y   Done              Terminated    0          0           creamce02.ciemat.es
+46    Y   Done              Terminated    0          0           creamce03.ciemat.es
+47    Y   Done              Terminated    0          0           creamce03.ciemat.es
+48    Y   Done              Terminated    0          0           creamce03.ciemat.es
+49    Y   Done              Terminated    0          0           creamce02.ciemat.es
+50    Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+51    Y   Done              Terminated    0          0           creamce02.ciemat.es
+52    Y   Done              Terminated    0          0           creamce03.ciemat.es
+53    Y   Done              Terminated    0          0           creamce03.ciemat.es
+54    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+55    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+56    Y   Done              Terminated    0          0           creamce03.ciemat.es
+57    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+58    Y   Done              Terminated    0          0           creamce02.ciemat.es
+59    Y   Done              Terminated    0          0           creamce02.ciemat.es
+60    Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+61    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+62    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+63    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+64    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+65    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+66    Y   Done              Terminated    0          0           creamce03.ciemat.es
+67    Y   Done              Terminated    0          0           creamce02.ciemat.es
+68    Y   Done              Terminated    0          0           creamce02.ciemat.es
+69    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+70    Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+71    Y   Done              Terminated    0          0           creamce02.ciemat.es
+72    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+73    Y   Done              Terminated    0          0           creamce03.ciemat.es
+74    Y   Done              Terminated    0          0           creamce02.ciemat.es
+75    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+76    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+77    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+78    Y   Done              Terminated    0          0           creamce02.ciemat.es
+79    Y   Done              Terminated    0          0           creamce03.ciemat.es
+80    Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+81    Y   Done              Terminated    0          0           creamce03.ciemat.es
+82    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+83    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+84    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+85    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+86    Y   Done              Terminated    0          0           creamce03.ciemat.es
+87    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+88    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+89    Y   Done              Terminated    0          0           creamce03.ciemat.es
+90    Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+91    Y   Done              Terminated    0          0           creamce02.ciemat.es
+92    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+93    Y   Done              Terminated    0          0           creamce03.ciemat.es
+94    Y   Done              Terminated    0          0           creamce02.ciemat.es
+95    Y   Done              Terminated    0          0           creamce03.ciemat.es
+96    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+97    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+98    Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+99    Y   Done              Terminated    0          0           creamce02.ciemat.es
+100   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+101   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+102   Y   Done              Terminated    0          0           creamce02.ciemat.es
+103   Y   Done              Terminated    0          0           creamce03.ciemat.es
+104   Y   Done              Terminated    0          0           creamce02.ciemat.es
+105   Y   Done              Terminated    0          0           creamce02.ciemat.es
+106   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+107   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+108   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+109   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+110   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+111   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+112   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+113   Y   Done              Terminated    0          0           creamce03.ciemat.es
+114   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+115   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+116   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+117   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+118   Y   Done              Terminated    0          0           creamce03.ciemat.es
+119   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+120   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+121   Y   Done              Terminated    0          0           creamce03.ciemat.es
+122   Y   Done              Terminated    0          0           creamce02.ciemat.es
+123   Y   Done              Terminated    0          0           creamce02.ciemat.es
+124   Y   Done              Terminated    0          0           creamce03.ciemat.es
+125   Y   Done              Terminated    0          0           creamce02.ciemat.es
+126   Y   Done              Terminated    0          0           creamce03.ciemat.es
+127   Y   Done              Terminated    0          0           creamce03.ciemat.es
+128   Y   Done              Terminated    0          0           creamce02.ciemat.es
+129   Y   Done              Terminated    0          0           creamce02.ciemat.es
+130   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+131   Y   Done              Terminated    0          0           creamce03.ciemat.es
+132   Y   Done              Terminated    0          0           creamce03.ciemat.es
+133   Y   Done              Terminated    0          0           creamce02.ciemat.es
+134   Y   Done              Terminated    0          0           creamce03.ciemat.es
+135   Y   Done              Terminated    0          0           creamce03.ciemat.es
+136   Y   Done              Terminated    0          0           creamce03.ciemat.es
+137   Y   Done              Terminated    0          0           creamce03.ciemat.es
+138   Y   Done              Terminated    0          0           creamce03.ciemat.es
+139   Y   Done              Terminated    0          0           creamce03.ciemat.es
+140   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+141   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+142   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+143   Y   Done              Terminated    0          0           creamce02.ciemat.es
+144   Y   Done              Terminated    0          0           creamce03.ciemat.es
+145   Y   Done              Terminated    0          0           creamce02.ciemat.es
+146   Y   Done              Terminated    0          0           creamce02.ciemat.es
+147   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+148   Y   Done              Terminated    0          0           creamce02.ciemat.es
+149   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+150   Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+151   Y   Done              Terminated    0          0           creamce03.ciemat.es
+152   Y   Done              Terminated    0          0           creamce02.ciemat.es
+153   Y   Done              Terminated    0          0           creamce02.ciemat.es
+154   Y   Done              Terminated    0          0           creamce03.ciemat.es
+155   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+156   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+157   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+158   Y   Done              Terminated    0          0           creamce02.ciemat.es
+159   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+160   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+161   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+162   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+163   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+164   Y   Done              Terminated    0          0           creamce02.ciemat.es
+165   Y   Done              Terminated    0          0           creamce03.ciemat.es
+166   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+167   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+168   Y   Done              Terminated    0          0           creamce03.ciemat.es
+169   Y   Done              Terminated    0          0           creamce02.ciemat.es
+170   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+171   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+172   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+173   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+174   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+175   Y   Done              Terminated    0          0           creamce02.ciemat.es
+176   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+177   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+178   Y   Done              Terminated    0          0           creamce02.ciemat.es
+179   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+180   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+181   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+182   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+183   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+184   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+185   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+186   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+187   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+188   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+189   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+190   Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+191   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+192   Y   Done              Terminated    0          0           creamce03.ciemat.es
+193   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+194   Y   Done              Terminated    0          0           creamce03.ciemat.es
+195   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+196   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+197   Y   Done              Terminated    0          0           creamce02.ciemat.es
+198   Y   Done              Terminated    0          0           creamce03.ciemat.es
+199   Y   Done              Terminated    0          0           creamce02.ciemat.es
+200   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+201   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+202   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+203   Y   Done              Terminated    0          0           creamce02.ciemat.es
+204   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+205   Y   Done              Terminated    0          0           creamce03.ciemat.es
+206   Y   Done              Terminated    0          0           creamce03.ciemat.es
+207   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+208   Y   Done              Terminated    0          0           creamce02.ciemat.es
+209   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+210   Y   Done              Terminated    0          0           creamce03.ciemat.es
+--------------------------------------------------------------------------------
+211   Y   Done              Terminated    0          0           creamce03.ciemat.es
+212   Y   Done              Terminated    0          0           creamce02.ciemat.es
+213   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+214   Y   Done              Terminated    0          0           creamce03.ciemat.es
+215   Y   Done              Terminated    0          0           creamce02.ciemat.es
+216   Y   Done              Terminated    0          0           creamce03.ciemat.es
+217   Y   Done              Terminated    0          0           creamce03.ciemat.es
+218   Y   Done              Terminated    0          0           creamce03.ciemat.es
+219   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+220   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+221   Y   Done              Terminated    0          0           creamce02.ciemat.es
+222   Y   Done              Terminated    0          0           creamce02.ciemat.es
+223   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+224   Y   Done              Terminated    0          0           creamce03.ciemat.es
+225   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+226   Y   Done              Terminated    0          0           creamce02.ciemat.es
+227   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+228   Y   Done              Terminated    0          0           creamce02.ciemat.es
+229   Y   Done              Terminated    0          0           creamce02.ciemat.es
+230   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+231   Y   Done              Terminated    0          0           creamce03.ciemat.es
+232   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+233   Y   Done              Terminated    0          0           creamce03.ciemat.es
+234   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+235   Y   Done              Terminated    0          0           creamce02.ciemat.es
+236   Y   Done              Terminated    0          0           creamce02.ciemat.es
+237   Y   Done              Terminated    0          0           creamce02.ciemat.es
+238   Y   Done              Terminated    0          0           creamce02.ciemat.es
+239   Y   Done              Terminated    0          0           creamce02.ciemat.es
+240   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+241   Y   Done              Terminated    0          0           creamce02.ciemat.es
+242   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+243   Y   Done              Terminated    0          0           creamce02.ciemat.es
+244   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+245   Y   Done              Terminated    0          0           creamce02.ciemat.es
+246   Y   Done              Terminated    0          0           creamce02.ciemat.es
+247   Y   Done              Terminated    0          0           creamce02.ciemat.es
+248   Y   Done              Terminated    0          0           creamce03.ciemat.es
+249   Y   Done              Terminated    0          0           creamce02.ciemat.es
+250   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+251   Y   Done              Terminated    0          0           creamce02.ciemat.es
+252   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+253   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+254   Y   Done              Terminated    0          0           creamce02.ciemat.es
+255   Y   Done              Terminated    0          0           creamce02.ciemat.es
+256   Y   Done              Terminated    0          0           creamce03.ciemat.es
+257   Y   Done              Terminated    0          0           creamce02.ciemat.es
+258   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+259   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+260   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+261   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+262   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+263   Y   Done              Terminated    0          0           creamce02.ciemat.es
+264   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+265   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+266   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+267   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+268   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+269   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+270   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+271   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+272   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+273   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+274   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+275   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+276   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+277   Y   Done              Terminated    0          0           creamce03.ciemat.es
+278   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+279   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+280   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+281   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+282   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+283   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+284   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+285   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+286   Y   Done              Terminated    0          0           creamce02.ciemat.es
+287   Y   Done              Terminated    0          0           creamce03.ciemat.es
+288   Y   Done              Terminated    0          0           creamce02.ciemat.es
+289   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+290   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+291   Y   Done              Terminated    0          0           creamce02.ciemat.es
+292   Y   Done              Terminated    0          0           creamce02.ciemat.es
+293   Y   Done              Terminated    0          0           creamce02.ciemat.es
+294   Y   Done              Terminated    0          0           creamce02.ciemat.es
+295   Y   Done              Terminated    0          0           creamce02.ciemat.es
+296   Y   Done              Terminated    0          0           creamce03.ciemat.es
+297   Y   Done              Terminated    0          0           creamce02.ciemat.es
+298   Y   Done              Terminated    0          0           creamce02.ciemat.es
+299   Y   Done              Terminated    0          0           creamce02.ciemat.es
+300   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+--------------------------------------------------------------------------------
+301   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+302   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+303   Y   Done              Terminated    0          0           creamce02.ciemat.es
+304   Y   Done              Terminated    0          0           creamce02.ciemat.es
+305   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+306   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+307   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+308   Y   Done              Terminated    0          0           creamce03.ciemat.es
+309   Y   Done              Terminated    0          0           creamce02.ciemat.es
+310   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+311   Y   Done              Terminated    0          0           creamce02.ciemat.es
+312   Y   Done              Terminated    0          0           creamce02.ciemat.es
+313   Y   Done              Terminated    0          0           creamce02.ciemat.es
+314   Y   Done              Terminated    0          0           creamce02.ciemat.es
+315   Y   Done              Terminated    0          0           creamce02.ciemat.es
+316   Y   Done              Terminated    0          0           creamce02.ciemat.es
+317   Y   Done              Terminated    0          0           creamce03.ciemat.es
+318   Y   Done              Terminated    0          0           ingrid.cism.ucl.ac.be
+319   Y   Done              Terminated    0          0           creamce02.ciemat.es
+320   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+321   Y   Done              Terminated    0          0           creamce02.ciemat.es
+322   Y   Done              Terminated    0          0           creamce02.ciemat.es
+323   Y   Done              Terminated    0          0           creamce02.ciemat.es
+324   Y   Done              Terminated    0          0           creamce03.ciemat.es
+325   Y   Done              Terminated    0          0           creamce02.ciemat.es
+326   Y   Done              Terminated    0          0           creamce03.ciemat.es
+327   Y   Done              Terminated    0          0           creamce03.ciemat.es
+328   Y   Done              Terminated    0          0           creamce02.ciemat.es
+329   Y   Done              Terminated    0          0           creamce02.ciemat.es
+330   Y   Done              Terminated    0          0           creamce02.ciemat.es
+--------------------------------------------------------------------------------
+331   Y   Done              Terminated    0          0           creamce02.ciemat.es
+332   Y   Done              Terminated    0          0           creamce02.ciemat.es
+
+crab:  ExitCodes Summary
+ >>>>>>>>> 332 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1-332 
+	See https://twiki.cern.ch/twiki/bin/view/CMS/JobExitCodes for Exit Code meaning
+
+crab:   332 Total Jobs 
+
+crab:  You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=yoshin_ZZ_rqe742
+	Your task name is: yoshin_ZZ_rqe742 
+
+Log file is /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabTasks/MC/ZZ/log/crab.log

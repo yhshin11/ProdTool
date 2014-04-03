@@ -1,0 +1,80 @@
+#!/bin/bash
+
+logfile=log2R
+DS=$1
+crab -status -c crabTasks/$DS > $PRODPATH/tmp/$logfile
+
+echo "" > tmp/tmpResub
+
+
+##check the version
+V=1
+MultV=`ls -d $PRODPATH/$DS_*`
+if [ -n "$MultV" ]; then
+    V=`echo ${MultV#*_V}`
+    V=`echo $V + 1 | bc`
+fi
+
+#type=`echo ${DS%*/}`
+tagDS=`echo ${DS#*/}`
+name=$tagDS"_V"$V 
+
+#prepare the config file
+cp $PRODPATH/crabCfgs/$DS.cfg $PRODPATH/crabCfgs/Resubmissions/$name.cfg	
+sed -i 's/'$tagDS'/'$name'/g' 
+
+
+if [ -d $PRODPATH/scripts/taskResub ];then
+echo "#!/bin/bash" > $PRODPATH/scripts/taskResub
+fi
+
+echo "crab -create -cfg $PRODPATH/crabCfgs/Resubmissions$name.cfg" >> $PRODPATH/scripts/taskResub
+
+while read line
+do 
+
+ if [ "${line:0:7}" = "working"  ] && [ -n line ]; then
+
+	if [ "${line:$lstring:5}" != "multi" ]; then
+	echo >> tmp/tmpResub
+
+	dataset=${line:$lstring}
+	Ndjobs=0
+	
+	echo -n " crab -c crabTasks/Resubmission/$DS -submit " >> tmp/tmpResub
+
+	jobN=`echo "$line" | awk '{print $1}'`
+	jobEnd=`echo "$line" | awk '{print $2}'`
+	jobStat=`echo "$line" | awk '{print $3}'`
+	jobCode=`echo "$line" | awk '{print $6}'`
+
+
+	if [ "$jobEnd" == "proxy" ]; then
+	    continue
+	fi
+
+	if [ "${dataset:0:5}" != "multi" ] && [ "${jobStat:0:4}" != "Done" -a "$jobStat" != "Cleared" ];then
+	echo -n "$jobN," >> tmp/tmpResub
+	fi
+
+
+done < $logfile
+
+echo >> tmp/tmpResub
+
+sed -i 's/   ,/,/g' tmp/tmpResub
+sed -i 's/  ,/,/g' tmp/tmpResub
+sed -i 's/ ,/,/g' tmp/tmpResub
+
+
+while read line
+do 
+  job=`echo $line | awk '{print $5}'`
+  if [ -n "$job" ]; then
+      echo $line >>  $PRODPATH/scripts/taskResub
+  fi
+done <  tmp/tmpResub
+
+
+rm  tmp/tmpResub
+chmod +rwx $PRODPATH/scripts/taskResub

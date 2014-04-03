@@ -1,0 +1,64 @@
+Universe  = vanilla
+Environment = CONDOR_ID=$(Cluster).$(Process);JobRunCount=$$([ ifThenElse(isUndefined(JobRunCount),0,JobRunCount) ]);GlideinMemory=$$([ ifThenElse(isUndefined(ImageSize_RAW),0,ImageSize_RAW) ]);Glidein_MonitorID=$$([ ifThenElse(isUndefined(Glidein_MonitorID),0,Glidein_MonitorID) ]) 
+since=(CurrentTime-EnteredCurrentStatus)
+Periodic_Remove = ((JobStatus == 2) && (((CurrentTime - JobCurrentStartDate) > (MaxWallTimeMins*60)) =?= True)) || (JobStatus==5 && $(since)>691200) || (JobStatus==1 && $(since)>691200)
+x509userproxy = x509up_u1112
+stream_output = false
+stream_error  = false
+notification  = never
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+copy_to_spool           = false
++DESIRED_SEs = "osg-se.sprace.org.br,cmsrm-se01.roma1.infn.it,cmssrm-kit.gridka.de,srm.ihepa.ufl.edu,cit-se.ultralight.org,gfe02.grid.hep.ph.ic.ac.uk,cluster142.knu.ac.kr,srm.ciemat.es,cmssrmdisk.fnal.gov,ingrid-se02.cism.ucl.ac.be,polgrid4.in2p3.fr,cmssrm.hep.wisc.edu,ganymede.hep.kbfi.ee,dcache-se-cms.desy.de,hepse01.colorado.edu"
++DESIRED_CMSDataset ="/DYJetsToLL_M-50_TuneZ2Star_8TeV-madgraph-tarball/Summer12_DR53X-PU_S10_START53_V7A-v1/AODSIM"
++DESIRED_CMSVersion ="CMSSW_5_3_9_patch3"
++DESIRED_CMSVersionNr ="50309"
++DESIRED_CMSScramArch ="slc5_amd64_gcc462"
++DESIRED_OpSyses ="LINUX"
++DESIRED_OpSysMajorVers ="5,6"
++DESIRED_Archs ="X86_64"
++AccountingGroup ="yoshin"
++Glidein_MonitorID = "https://hcc-crabserver.unl.edu//140401//$(Cluster).$(Process)"
++MaxWallTimeMins = 1315
+request_memory = 2000
+transfer_input_files = default.tgz,arguments.xml,CMSSW.sh
+Executable = CMSSW.sh
+log     = condor.log
+
++BLTaskID = "yoshin_ZJets_2l_j4xd13"
+Arguments  = 286 4
+output  = CMSSW_286.stdout
+error   = CMSSW_286.stderr
+transfer_output_remaps   = "CMSSW_286.stderr=/dev/null"
+transfer_output_files   = out_files_286.tgz,crab_fjr_286.xml
+Queue 1
+Arguments  = 779 4
+output  = CMSSW_779.stdout
+error   = CMSSW_779.stderr
+transfer_output_remaps   = "CMSSW_779.stderr=/dev/null"
+transfer_output_files   = out_files_779.tgz,crab_fjr_779.xml
+Queue 1
+Arguments  = 878 4
+output  = CMSSW_878.stdout
+error   = CMSSW_878.stderr
+transfer_output_remaps   = "CMSSW_878.stderr=/dev/null"
+transfer_output_files   = out_files_878.tgz,crab_fjr_878.xml
+Queue 1
+Arguments  = 930 4
+output  = CMSSW_930.stdout
+error   = CMSSW_930.stderr
+transfer_output_remaps   = "CMSSW_930.stderr=/dev/null"
+transfer_output_files   = out_files_930.tgz,crab_fjr_930.xml
+Queue 1
+Arguments  = 1145 4
+output  = CMSSW_1145.stdout
+error   = CMSSW_1145.stderr
+transfer_output_remaps   = "CMSSW_1145.stderr=/dev/null"
+transfer_output_files   = out_files_1145.tgz,crab_fjr_1145.xml
+Queue 1
+Arguments  = 1491 4
+output  = CMSSW_1491.stdout
+error   = CMSSW_1491.stderr
+transfer_output_remaps   = "CMSSW_1491.stderr=/dev/null"
+transfer_output_files   = out_files_1491.tgz,crab_fjr_1491.xml
+Queue 1

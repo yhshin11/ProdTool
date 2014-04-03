@@ -1,0 +1,270 @@
+140311_041817: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/TTbarJets.cfg
+140311_041824: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/T_schan.cfg
+140311_041916: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/T_tWchan.cfg
+140311_041959: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/T_tchan.cfg
+140311_042047: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/Tbar_schan.cfg
+140311_042129: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/Tbar_tWchan.cfg
+140311_042212: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/Tbar_tchan.cfg
+140311_042258: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/WGamma.cfg
+140311_042350: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/WW.cfg
+140311_042442: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/WZ.cfg
+140311_042535: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/ZGamma.cfg
+140311_042621: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/ZJets_2l.cfg
+140311_042804: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -create -cfg /home/yhshin/CMSSW_5_3_9_patch3/src/ProdTool/crabCfgs/MC/ZZ.cfg
+140311_043332: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/TTbarJets
+140311_043335: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/T_schan
+140311_043349: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/T_tWchan
+140311_043402: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/T_tchan
+140311_043435: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/Tbar_tchan
+140311_043451: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/Tbar_tWchan
+140311_043516: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit -c crabTasks/MC/Tbar_schan
+140311_043532: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1-500 -c crabTasks/MC/WW
+140311_043600: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1-500 -c crabTasks/MC/WZ
+140311_043636: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1-500 -c crabTasks/MC/ZZ
+140311_043710: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1-500 -c crabTasks/MC/ZJets_2l
+140311_043817: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 501-1000 -c crabTasks/MC/ZJets_2l
+140311_043951: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1001-1500 -c crabTasks/MC/ZJets_2l
+140311_044156: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1501-1527 -c crabTasks/MC/ZJets_2l
+140311_044222: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1-500 -c crabTasks/MC/ZGamma
+140311_044242: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 1-500 -c crabTasks/MC/WGamma
+140311_045515: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/WW
+140311_050029: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140311_050120: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan/
+140311_195649: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140311_200137: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan/
+140311_200250: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tWchan/
+140311_200334: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tchan/
+140311_200633: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tWchan/
+140311_200647: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_schan/
+140311_200656: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tchan/
+140311_234919: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140312_001204: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140312_003941: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan/
+140312_004429: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -getoutput 1 -c crabTasks/MC/T_schan/
+140314_005203: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets
+140314_005217: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tWchan
+140314_005419: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets
+140314_005434: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan
+140314_005440: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tWchan
+140314_005444: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tchan
+140314_005449: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140314_005452: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140314_005456: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140314_005500: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/WGamma
+140314_005508: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140314_005539: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets
+140314_005542: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan
+140314_005546: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tWchan
+140314_005550: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tchan
+140314_005604: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140314_005609: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140314_005613: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140314_010504: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/TTbarJets
+140314_010507: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan
+140314_010512: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tWchan
+140314_010516: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tchan
+140314_010525: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140314_010529: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140314_010533: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140314_010540: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/WGamma
+140314_010557: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/WW
+140314_010618: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/WZ
+140314_010640: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/ZGamma
+140314_010652: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140314_010831: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/ZZ
+140314_011150: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/WW
+140314_011611: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_schan/
+140314_011623: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tchan/
+140314_012209: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 189 -c crabTasks/MC/T_tchan
+140314_012314: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -submit 189, -c crabTasks/MC/T_tchan
+140314_012329: /cvmfs/cms.cern.ch/crab/CRAB_2_10_3_patch2/python/crab.py -status -c crabTasks/MC/T_tchan/
+140327_024433: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140327_024501: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140327_024505: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140327_024510: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140327_024518: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140327_024522: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140327_024527: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140327_024533: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140327_024541: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140327_024553: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140327_024604: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140327_024611: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140327_024658: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_031619: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_031711: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_031828: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_031850: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -submit 189, -c crabTasks/MC/T_tchan
+140328_032141: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_032228: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -create -cfg crabCfgs/MC/TTbarJets.cfg
+140328_032459: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -submit -c crabTasks/MC/TTbarJets/
+140328_032602: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_032737: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_034911: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_034917: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_034947: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_034959: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_035003: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_035008: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_035016: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_035021: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_035025: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140328_035031: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140328_035039: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140328_035050: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140328_035101: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140328_035107: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140328_035147: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_040816: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_040828: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_040832: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_040836: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_040845: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_040849: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_040854: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140328_040900: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140328_040908: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140328_040920: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140328_040931: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140328_040938: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140328_041017: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_041550: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_041601: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_041605: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_041610: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_041617: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_041621: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_041626: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140328_041632: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140328_041632: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140328_041633: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140328_041713: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_041724: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_041728: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_041733: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_041740: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_041744: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_041749: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140328_041755: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140328_041803: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140328_041814: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140328_041826: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140328_041832: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140328_041912: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_042202: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_042214: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_042218: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_042223: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_042224: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_042224: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_042226: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140328_042228: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140328_042229: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140328_042230: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_042513: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_045843: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_050030: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_050042: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_050047: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_050051: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_050055: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_050056: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_052522: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140328_052535: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140328_052539: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/T_schan -forceResubmit 2,3,4,7,8,
+140328_052552: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140328_052603: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/T_tWchan -forceResubmit 1,2,3,4,5,6,7,8,9,10,13,15,21,24,25,
+140328_052615: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140328_052624: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/T_tchan -forceResubmit 1,2,3,8,10,11,17,18,24,40,41,42,44,45,51,52,53,55,60,61,62,64,65,66,67,68,69,71,72,73,85,86,100,103,127,139,143,174,187,188,189,
+140328_052658: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140328_052702: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140328_052706: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/Tbar_tWchan -forceResubmit 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,24,25,26,27,
+140328_052734: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140328_052740: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/Tbar_tchan -forceResubmit 2,15,18,24,40,43,45,47,50,54,57,71,72,88,89,91,93,96,97,
+140328_052756: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140328_052804: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WGamma -forceResubmit 8,94,105,129,148,
+140328_052817: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WGamma -forceResubmit 115,128,
+140328_052829: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140328_052841: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WW -forceResubmit 139,
+140328_052858: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140328_052913: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WZ -forceResubmit 11,15,25,28,186,200,201,202,203,217,218,219,221,222,244,320,321,322,323,324,326,328,330,331,332,334,335,336,
+140328_052931: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140328_052937: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/ZGamma -forceResubmit 1,85,
+140328_052949: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140328_053029: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/ZJets_2l -forceResubmit 28,30,32,39,42,45,46,50,57,60,62,70,167,169,187,197,201,212,222,229,230,231,232,233,234,235,237,246,248,251,256,261,275,278,286,298,318,330,336,341,348,357,365,366,368,408,419,470,474,475,476,477,483,491,516,517,524,526,528,531,532,536,612,622,637,642,647,655,675,676,678,692,704,705,719,721,728,729,742,753,757,779,811,816,836,856,858,871,878,930,939,961,1009,1026,1039,1046,1048,1060,1066,1069,1070,1074,1077,1083,1089,1090,1097,1130,1135,1139,1145,1159,1164,1171,1173,1184,1187,1190,1191,1223,1316,1343,1351,1353,1355,1356,1390,1398,1404,1421,1462,1467,1471,1472,1491,1503,
+140328_053106: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/ZJets_2l -forceResubmit 345,358,360,383,518,635,687,702,720,814,1068,1093,1106,1111,1195,1201,1344,
+140328_053124: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140328_053135: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/ZZ -forceResubmit 1,4,5,6,
+140328_053340: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_053612: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_054623: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -getoutput 3 -c crabTasks/MC/T_tchan/
+140328_054642: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_055517: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_055606: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_113430: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_113459: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_142006: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_154310: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140328_154958: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140328_180307: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140331_115731: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140331_120024: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140331_120036: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/TTbarJets -forceResubmit 103,
+140331_120103: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140331_120110: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140331_120118: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140331_120131: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140331_120135: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140331_120141: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140331_120148: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140331_120203: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140331_120220: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WW -forceResubmit 139,
+140331_120241: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140331_120302: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WZ -forceResubmit 28,
+140331_120319: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140331_120330: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140331_120527: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/ZJets_2l -forceResubmit 286,779,878,930,1046,1066,1145,1190,1223,1316,1491,
+140331_120828: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140401_030348: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140401_031231: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets/
+140401_031245: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan/
+140401_031321: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan/
+140401_031333: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan/
+140401_031352: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan/
+140401_031401: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan/
+140401_031415: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan/
+140401_031437: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma/
+140401_031447: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW/
+140401_031606: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140401_031635: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW/
+140401_031655: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma/
+140401_031705: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l/
+140401_031757: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l/
+140401_031900: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ/
+140401_031920: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/TTbarJets
+140401_031931: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_schan
+140401_031935: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tWchan
+140401_031940: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/T_tchan
+140401_031948: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_schan
+140401_031952: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tWchan
+140401_031956: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/Tbar_tchan
+140401_032004: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WGamma
+140401_032011: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140401_032022: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WW -forceResubmit 139,
+140401_032039: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ
+140401_032051: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/WZ -forceResubmit 28,
+140401_032105: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZGamma
+140401_032111: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l
+140401_032150: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -c crabTasks/MC/ZJets_2l -forceResubmit 286,779,878,930,1145,1316,1491,
+140401_032220: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZZ
+140401_033252: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l/
+140401_033425: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW
+140401_033455: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ/
+140401_033548: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ/
+140401_121922: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW/
+140401_122529: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/ZJets_2l/
+140401_124456: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WW/
+140401_124553: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -getoutput 139 -c crabTasks/MC/WW/
+140401_124807: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -status -c crabTasks/MC/WZ/
+140401_125631: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -getoutput 29 -c crabTasks/MC/WZ
+140401_125640: /cvmfs/cms.cern.ch/crab/CRAB_2_10_4_patch4/python/crab.py -getoutput 28 -c crabTasks/MC/WZ

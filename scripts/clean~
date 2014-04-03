@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rm $PRODPATH/database/*
+
+rm $PRODPATH/crabCfgs/Data/*
+rm $PRODPATH/crabCfgs/MC/*
+rm $PRODPATH/crabCfgs/Resubmission/*
+
+rm -r $PRODPATH/crabTasks/*/*
+
+rm $PRODPATH/logs/crabSub.log
+rm $PRODPATH/logs/summary

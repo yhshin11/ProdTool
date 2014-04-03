@@ -1,0 +1,222 @@
+#!/bin/bash
+
+logfile=tmp/log
+echo "#!/bin/bash" > tmp/ResubFile
+echo "#!/bin/bash" > tmp/FailFile
+echo "#!/bin/bash" > tmp/SubFile
+echo "#!/bin/bash" > tmp/StuckFileStep1
+echo "#!/bin/bash" > tmp/StuckFileStep2
+echo "" > tmp/ResubFiletmp
+echo "" > tmp/FailFiletmp
+echo "" > tmp/SubFiletmp
+echo "" > tmp/StuckFileStep1tmp
+echo "" > tmp/StuckFileStep2tmp
+echo > tmp/Global
+echo > tmp/GlobFile
+dataset=""
+
+lstring=`echo ${#PRODPATH} + 21 + 10 | bc`
+echo "$prodpath" ${#PRODPATH}
+echo "lstring" $lstring
+
+Ntot=0
+Ndone=0
+Nfail=0
+Nabort=0
+Nstuck=0
+Ncreated=0
+
+Nca=0
+Ncc=0
+Ncf=0
+Ncs=0
+
+
+while read JTline
+do 
+	#echo "jtline0:7" ${JTline:0:7}
+    if [ "${JTline:0:7}" = "working"  ]&& [ -n "$JTline" ];then # && [ -n $JTline ]; then
+	#echo "Level 1"
+	#echo "jtline" $JTline
+	#echo "jtline:lstring" "${JTline:$lstring}"
+	#echo "jtline:lstring:4" "${JTline:$lstring:4}"
+
+	if [ "${JTline:$lstring:4}" != "crab" ]; then
+	#echo "Level 2"
+	echo >> tmp/ResubFiletmp
+	echo >> tmp/FailFiletmp
+	echo >> tmp/SubFiletmp
+	echo >> tmp/StuckFiletmp
+
+	tmpDS=${JTline:$lstring}
+	echo "tmpDS: " $tmpDS
+	dataset=${tmpDS%*/}
+	echo "dataset: " $dataset
+	Ndjobs=0
+	
+	echo -n " crab -c crabTasks/$dataset -forceResubmit " >> tmp/ResubFiletmp
+	echo -n " crab -c crabTasks/$dataset -submit " >> tmp/SubFiletmp
+	echo -n " crab -c crabTasks/$dataset -kill " >> tmp/StuckFileStep1tmp
+	echo -n " crab -c crabTasks/$dataset -forceResubmit " >> tmp/StuckFileStep2tmp
+	echo -n " crab -c crabTasks/$dataset -forceResubmit " >> tmp/FailFiletmp
+	echo -n  "$dataset " >> tmp/Global
+	echo -n  "$dataset " >> tmp/GlobFile
+	fi
+    fi
+
+    jobN=`echo "$JTline" | awk '{print $1}'`
+    jobEnd=`echo "$JTline" | awk '{print $2}'`
+    jobStat=`echo "$JTline" | awk '{print $3}'`
+    jobCode=`echo "$JTline" | awk '{print $6}'`
+
+    if [ "$jobEnd" == "proxy" ]; then
+	continue
+    fi
+
+    if [ "$jobStat" = "Aborted"  -o "$jobStat" = "Cancelled" -o "$jobStat" = "CannotSubmit" ]; then
+	echo -n "$jobN," >> tmp/ResubFiletmp
+	Nabort=`echo $Nabort + 1 | bc`
+	Nca=`echo $Nca + 1 | bc`
+
+	if [[ $Nca -ge 450 ]]; then
+	    echo >> tmp/ResubFiletmp
+	    echo -n " crab -c crabTasks/$dataset -forceResubmit " >> tmp/ResubFiletmp
+	    Nca=0
+	fi
+
+    elif [ "$jobStat" = "Created" ]; then
+	echo -n "$jobN," >> tmp/SubFiletmp
+	Ncreated=`echo $Ncreated + 1 | bc`
+	Ncc=`echo $Ncc + 1 | bc`
+
+	if [[ $Ncc -ge 450 ]]; then
+	    echo >> tmp/SubFiletmp
+	    echo -n " crab -c crabTasks/$dataset -submit " >> tmp/SubFiletmp
+	    Ncc=0
+	fi
+	
+    elif [ "$jobStat" = "Submitting" -o "$jobStat" = "Waiting" -o "$jobStat" = "Scheduled" -o "$jobStat" = "Submitted" ]; then
+	echo -n "$jobN," >> tmp/StuckFileStep1tmp
+	echo -n "$jobN," >> tmp/StuckFileStep2tmp
+	Nstuck=`echo $Nstuck + 1 | bc`
+	Ncs=`echo $Ncs + 1 | bc`
+
+	if [[ $Ncs -ge 450 ]]; then
+	    echo >> tmp/StuckFileStep1tmp
+	    echo >> tmp/StuckFileStep2tmp
+	    echo -n " crab -c crabTasks/$dataset -kill " >> tmp/StuckFileStep1tmp
+	    echo -n " crab -c crabTasks/$dataset -forceResubmit " >> tmp/StuckFileStep2tmp
+	    Ncs=0
+	fi
+	
+    elif [ "${jobStat:0:4}" = "Done" -o "$jobStat" = "Cleared" ] && [ "$jobCode" != "0" ]; then 
+	echo -n "$jobN," >> tmp/FailFiletmp
+	Nfail=`echo $Nfail + 1 | bc`
+	Ncf=`echo $Ncf + 1 | bc`
+
+	if [[ $Ncf -ge 450 ]]; then
+	    echo >> tmp/FailFiletmp
+	    echo -n " crab -c crabTasks/$dataset -forceResubmit " >> tmp/FailFiletmp
+	    Ncf=0
+	fi
+	
+    elif [ "${jobStat:0:4}" = "Done" -o "$jobStat" = "Cleared" ]; then
+	  Ndjobs=`echo $Ndjobs + 1 | bc`
+	  Ndone=`echo $Ndone + 1 | bc`
+      fi
+      tl="`echo $JTline | grep Total`"
+   
+      #echo "Scan ongoing " $dataset   $jobN   $jobStat   $jobCode
+     
+
+      if [ -n "$tl" ]; then
+	  echo -n `echo "$JTline" | awk '{print $2}'` >> tmp/GlobFile
+	  echo "   "$Ndjobs >> tmp/GlobFile
+	  echo -n `echo "$JTline" | awk '{print $2}'` >> tmp/Global
+	  echo ""  >> tmp/Global
+	  Ntot=`echo "$JTline" | awk '{print $2}'`
+      fi
+
+done < $logfile
+
+
+echo >> tmp/ResubFiletmp
+echo >> tmp/FailFiletmp
+echo >> tmp/SubFiletmp
+echo >> tmp/StuckFileStep1tmp
+echo >> tmp/StuckFileStep2tmp
+
+sed -i 's/   ,/,/g' tmp/ResubFiletmp
+sed -i 's/  ,/,/g' tmp/ResubFiletmp
+sed -i 's/ ,/,/g' tmp/ResubFiletmp
+sed -i 's/   ,/,/g' tmp/FailFiletmp
+sed -i 's/  ,/,/g' tmp/FailFiletmp
+sed -i 's/ ,/,/g' tmp/FailFiletmp
+sed -i 's/  ,/,/g' tmp/SubFiletmp
+sed -i 's/   ,/,/g' tmp/SubFiletmp
+sed -i 's/ ,/,/g' tmp/SubFiletmp
+sed -i 's/   ,/,/g' tmp/StuckFileStep1tmp
+sed -i 's/  ,/,/g' tmp/StuckFileStep1tmp
+sed -i 's/ ,/,/g' tmp/StuckFileStep1tmp
+sed -i 's/   ,/,/g' tmp/StuckFileStep2tmp
+sed -i 's/  ,/,/g' tmp/StuckFileStep2tmp
+sed -i 's/ ,/,/g' tmp/StuckFileStep2tmp
+
+#find . -name "ResubFile" -print | xargs sed -i 's/  ,/,/g'
+
+
+###Now Cleaning
+#echo "#!/bin/bash" >  tmp/ResubFile
+while read JTline
+do 
+  job=`echo $JTline | awk '{print $5}'`
+  if [ -n "$job" ]; then
+      echo $JTline >>  tmp/ResubFile
+  fi
+done <  tmp/ResubFiletmp
+
+#echo "#!/bin/bash" >  tmp/FailFile
+while read JTline
+do 
+  job=`echo $JTline | awk '{print $5}'`
+  if [ -n "$job" ]; then
+      echo $JTline >>  tmp/FailFile
+  fi
+done <  tmp/FailFiletmp
+
+#echo "#!/bin/bash" >  tmp/SubFile
+while read JTline
+do 
+  job=`echo $JTline | awk '{print $5}'`
+ if [ -n "$job" ]; then
+      echo $JTline >>  tmp/SubFile
+  fi
+done <  tmp/SubFiletmp
+
+#echo "#!/bin/bash" >  tmp/StuckFileStep1
+while read JTline
+do 
+  job=`echo $JTline | awk '{print $5}'`
+ if [ -n "$job" ]; then
+      echo $JTline >>  tmp/StuckFileStep1
+  fi
+done <  tmp/StuckFileStep1tmp
+#echo "#!/bin/bash" >  tmp/StuckFileStep2
+while read JTline
+do 
+  job=`echo $JTline | awk '{print $5}'`
+ if [ -n "$job" ]; then
+      echo $JTline >>  tmp/StuckFileStep2
+  fi
+done <  tmp/StuckFileStep2tmp
+
+rm  tmp/StuckFileStep1tmp
+rm  tmp/StuckFileStep2tmp
+rm  tmp/SubFiletmp
+rm  tmp/FailFiletmp
+rm  tmp/ResubFiletmp
+
+#echo ${dataset#*/}"  "$Ntot"   "$Ndone"   "$Nfail"   "$Nabort"   "$Nstuck"   "$Ncreated
+
+
+source $PRODPATH/scripts/makeSummary.sh ${dataset#*/} $Ntot $Ndone $Nfail $Nabort $Nstuck $Ncreated
